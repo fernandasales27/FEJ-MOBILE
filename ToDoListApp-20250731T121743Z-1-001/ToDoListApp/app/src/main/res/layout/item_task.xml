@@ -1,0 +1,151 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeColor="#E0E0E0"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Imagem da Tarefa-->
+        <!-- Imagem da Tarefa-->
+
+
+        <!-- Nome -->
+
+        <ImageView
+            android:id="@+id/imageTask"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="centerCrop"
+            android:src= "@drawable/loading" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textTaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"/>
+        </LinearLayout>
+
+        <!-- Descrição -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Descrição:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"/>
+        </LinearLayout>
+
+        <!-- Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textTaskDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"/>
+        </LinearLayout>
+
+        <!-- Hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Hora:"
+                android:textColor="#757575"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textTaskTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#212121"/>
+        </LinearLayout>
+
+        <!-- Botões de ação centralizados -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar"
+                android:textColor="#1976D2"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remover"
+                android:textColor="#D32F2F"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

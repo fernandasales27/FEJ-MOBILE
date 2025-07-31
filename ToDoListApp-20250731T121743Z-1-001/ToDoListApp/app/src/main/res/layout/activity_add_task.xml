@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addTaskLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textAddTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Tarefa"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <!-- Nome da tarefa -->
+    <EditText
+        android:id="@+id/editTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Nome da tarefa"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textAddTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Descrição da tarefa -->
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Descrição da tarefa"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        app:layout_constraintTop_toBottomOf="@id/editTaskName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Data da tarefa -->
+    <EditText
+        android:id="@+id/editTaskDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Data da tarefa (dd/mm/aaaa)"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/editDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Horário da tarefa -->
+    <EditText
+        android:id="@+id/editTaskTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="Horário da tarefa (hh:mm)"
+        android:inputType="time"
+        app:layout_constraintTop_toBottomOf="@id/editTaskDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Container horizontal para os botões -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editTaskTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <!-- Container vertical centralizado -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Nome do app -->
+        <TextView
+            android:id="@+id/textAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProTask"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:gravity="center" />
+
+        <!-- Container horizontal dos botões -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/buttonAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="➕ Adicionar Tarefa"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                app:cornerRadius="12dp"/>
+
+            <Button
+                android:id="@+id/buttonListTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋 Minhas Tarefas"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF"
+                android:paddingStart="16dp"
+                android:paddingEnd="20dp"
+                app:cornerRadius="12dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
